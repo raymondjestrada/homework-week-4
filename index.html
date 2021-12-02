@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Fantasy Football Quiz</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <div class="title">Welcome to my Fantasy Football Quiz</div>
+            <div class="timer">
+                <div class="time_text">Time Left: </div>
+                <div id="time_sec">60</div>
+            </div>
+        </header>
+
+        <div id="question-container" class="hide">
+            <div id="question" class="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+
+        <div id="gameOver" class="hide">
+            <h1>DONE.</h1>
+            <h2>You got a score of:</h2>
+            <h3 class="score" id="score">0</h3>
+            <h3>Enter Your Initials to Save Your Score!</h3>
+            <fieldset>
+                <legend>Enter Here</legend>
+                <input type="text" id="inpValue" autofocus="true" placeholder="Enter Initials..">
+            </fieldset>
+            <fieldset>
+                <legend>HighScores</legend>
+                <div id="lsValue">
+                    <div class="row">
+                        <div class="column1">
+                            <h4>Players</h4>
+                        </div>
+                        <div class="column2">
+                            <h4>Score</h4>
+                        </div>
+                    </div>
+                </div>
+                <table id="myTable">
+                    <tr>
+                    </tr>
+                </table>
+                <br>
+            </fieldset>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+            <button id="end-btn" class="end-btn btn hide">Score</button>
+            <button id="restart-btn" class="restart-btn btn hide">Score</button>
+        </div>
+
+        <text class="score-text" id="score-text"></text>
+    </div>
+
+</body>
+
+</html>
