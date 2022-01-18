@@ -21,7 +21,7 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(timeline_background_draft3.jpg);
+    background-image: url("timeline_background_draft3.jpg");
     background-repeat: no-repeat;
     background-color: teal;
     background-position: center;
